@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_page/routes/my_routes.dart';
+import 'package:login_page/screens/home.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      onGenerateRoute: MyRoutes().onGenerateRoute,
-      initialRoute: './',
+      // onGenerateRoute: MyRoutes().onGenerateRoute,
+      // initialRoute: './',
+      home:const HomePage(),
     );
   }
 }
