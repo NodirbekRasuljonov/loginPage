@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/screens/login_page.dart';
 import 'package:login_page/screens/my_home_page.dart';
 import 'package:login_page/screens/splash.dart';
 
@@ -11,7 +12,7 @@ class MyRoutes {
         case './homepage':
         return MaterialPageRoute(builder: (context) =>const MyHomePage());
         case './loginPage':
-        return MaterialPageRoute(builder: (context) =>const MyHomePage());
+        return MaterialPageRoute(builder: (context) =>const LogInPage());
     }
   }
 }
