@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 15.0),
-                        child: Icon(
+                        child: const Icon(
                           SimpleIcons.globus,
                           size: 33.0,
                         ),
