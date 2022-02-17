@@ -6,6 +6,7 @@ class ColorConst {
   static Color borderColor = Colors.black;
   static Color kPrimaryColor = Colors.red;
   static Color secondaryColor = Colors.white;
+  static Color cardColor=Color(0xff343436);
 }
 
 class FontConst {
