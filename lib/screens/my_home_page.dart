@@ -26,8 +26,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: MediaQuery.of(context).size.height * 0.067,
                 width: MediaQuery.of(context).size.height * 025,
                 decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage('assets/images/logo 1.jpg'),),),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/logo 1.jpg'),
+                  ),
+                ),
               ),
             ),
             Positioned(
@@ -40,7 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   alignment: Alignment.center,
                   height: 50.0,
                   width: 343.0,
-                  child:Text('Войти',style: TextStyle(color: ColorConst.containertextColor,fontSize: FontConst.Medium),),
+                  child: Text(
+                    'Войти',
+                    style: TextStyle(
+                        color: ColorConst.containertextColor,
+                        fontSize: FontConst.Medium),
+                  ),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
                       color: Colors.red),
@@ -51,18 +58,49 @@ class _MyHomePageState extends State<MyHomePage> {
               bottom: 120.0,
               left: 16.0,
               right: 14.0,
-              child: Container(height: 50.0,width: 345.0,decoration: BoxDecoration(
-              color: Colors.red,
-              borderRadius: BorderRadius.circular(RadiusConst.Small)),),),
-             Positioned(
+              child: Container(
+                alignment: Alignment.center,
+                height: 50.0,
+                width: 345.0,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: ColorConst.borderColor,
+
+                  ),
+                  color: ColorConst.secondaryColor,
+                  borderRadius: BorderRadius.circular(RadiusConst.Small),
+                ),
+                child:Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin:const EdgeInsets.all(10.0),
+                      child: Icon(Icons.question_answer,color:ColorConst.textColor,size: FontConst.Medium,),),
+                    Text('Связаться с Банком',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
+                )
+              ),
+            ),
+            Positioned(
               bottom: 50.0,
               left: 16.0,
               right: 14.0,
-              child: Container(height: 50.0,width: 345.0,
-              decoration: BoxDecoration(border: Border.all(color: ColorConst.borderColor)),
-              
-              
-              ),),
+              child: Container(
+                height: 50.0,
+                width: 345.0,
+                 child:Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin:const EdgeInsets.all(10.0),
+                      child: Icon(Icons.,color:ColorConst.textColor,size: FontConst.Medium,),),
+                    Text('Язык интерфейса',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(RadiusConst.Small),
+                  border: Border.all(color: ColorConst.borderColor),
+                ),
+              ),
+            ),
           ],
         ),
       ),

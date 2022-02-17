@@ -270,6 +270,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.3"
+  simple_icons:
+    dependency: "direct main"
+    description:
+      name: simple_icons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "6.1.0"
   sky_engine:
     dependency: transitive
     description: flutter

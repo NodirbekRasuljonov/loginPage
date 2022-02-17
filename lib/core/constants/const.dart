@@ -4,6 +4,8 @@ class ColorConst {
   static Color containertextColor = Colors.white;
   static Color textColor = Colors.black;
   static Color borderColor = Colors.black;
+  static Color kPrimaryColor = Colors.red;
+  static Color secondaryColor = Colors.white;
 }
 
 class FontConst {
@@ -13,6 +15,7 @@ class FontConst {
   static double Large = 20.0;
   static double ExtraLarge = 24.0;
 }
+
 class RadiusConst {
   static double ExtraSmall = 8.0;
   static double Small = 10.0;
@@ -20,5 +23,3 @@ class RadiusConst {
   static double Large = 20.0;
   static double ExtraLarge = 24.0;
 }
-
-
