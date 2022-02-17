@@ -80,19 +80,31 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SliverToBoxAdapter(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                      'Карты',
-                      style: TextStyle(
-                          color: ColorConst.textColor, fontSize: 34.0),
-                    ),
-                    InkWell(child: Container(height: 23.0,width: 23.0,decoration: ,)
-                    )
-                      ],
-                    )
-                  ),
+                      child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Карты',
+                        style: TextStyle(
+                            color: ColorConst.textColor, fontSize: 34.0),
+                      ),
+                      InkWell(
+                        onTap: (){},
+                          child: CircleAvatar(
+                        radius: 15.0,
+                        backgroundColor: Colors.red,
+                        child: CircleAvatar(
+                          radius: 13.0,
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            Icons.add,
+                            size: FontConst.ExtraLarge,
+                            color: ColorConst.kPrimaryColor,
+                          ),
+                        ),
+                      ))
+                    ],
+                  )),
                   SliverToBoxAdapter(
                     child: SizedBox(
                       height: 200.0,
