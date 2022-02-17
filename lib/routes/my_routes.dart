@@ -10,6 +10,8 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) =>const SplashScreen());
         case './homepage':
         return MaterialPageRoute(builder: (context) =>const MyHomePage());
+        case './loginPage':
+        return MaterialPageRoute(builder: (context) =>const MyHomePage());
     }
   }
 }

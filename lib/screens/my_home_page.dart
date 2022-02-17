@@ -39,7 +39,9 @@ class _MyHomePageState extends State<MyHomePage> {
               bottom: 221.0,
               right: 16.0,
               child: InkWell(
-                onTap: (){},
+                onTap: () {
+                  Navigator.pushNamed(context, './loginPage');
+                },
                 child: Container(
                   alignment: Alignment.center,
                   height: 50.0,
@@ -61,28 +63,37 @@ class _MyHomePageState extends State<MyHomePage> {
               left: 16.0,
               right: 14.0,
               child: InkWell(
-                onTap: (){},
+                onTap: () {},
                 child: Container(
-                  alignment: Alignment.center,
-                  height: 50.0,
-                  width: 345.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: ColorConst.borderColor,
-              
+                    alignment: Alignment.center,
+                    height: 50.0,
+                    width: 345.0,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: ColorConst.borderColor,
+                      ),
+                      color: ColorConst.secondaryColor,
+                      borderRadius: BorderRadius.circular(RadiusConst.Small),
                     ),
-                    color: ColorConst.secondaryColor,
-                    borderRadius: BorderRadius.circular(RadiusConst.Small),
-                  ),
-                  child:Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin:const EdgeInsets.all(10.0),
-                        child: Icon(Icons.question_answer,color:ColorConst.textColor,size: FontConst.Medium,),),
-                      Text('Связаться с Банком',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
-                  )
-                ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(10.0),
+                          child: Icon(
+                            Icons.question_answer,
+                            color: ColorConst.textColor,
+                            size: FontConst.Medium,
+                          ),
+                        ),
+                        Text(
+                          'Связаться с Банком',
+                          style: TextStyle(
+                              color: ColorConst.textColor,
+                              fontSize: FontConst.Medium),
+                        )
+                      ],
+                    )),
               ),
             ),
             Positioned(
@@ -90,17 +101,27 @@ class _MyHomePageState extends State<MyHomePage> {
               left: 16.0,
               right: 14.0,
               child: InkWell(
-                onTap: (){},
+                onTap: () {},
                 child: Container(
                   height: 50.0,
                   width: 345.0,
-                   child:Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        margin:const EdgeInsets.symmetric(horizontal: 15.0),
-                        child: Icon(SimpleIcons.globus,size: 33.0,),),
-                      Text('Язык интерфейса',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
+                        margin: const EdgeInsets.symmetric(horizontal: 15.0),
+                        child: Icon(
+                          SimpleIcons.globus,
+                          size: 33.0,
+                        ),
+                      ),
+                      Text(
+                        'Язык интерфейса',
+                        style: TextStyle(
+                            color: ColorConst.textColor,
+                            fontSize: FontConst.Medium),
+                      )
+                    ],
                   ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(RadiusConst.Small),
