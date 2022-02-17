@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_page/core/constants/const.dart';
+import 'package:simple_icons/simple_icons.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -38,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
               bottom: 221.0,
               right: 16.0,
               child: InkWell(
+                onTap: (){},
                 child: Container(
                   alignment: Alignment.center,
                   height: 50.0,
@@ -58,46 +60,52 @@ class _MyHomePageState extends State<MyHomePage> {
               bottom: 120.0,
               left: 16.0,
               right: 14.0,
-              child: Container(
-                alignment: Alignment.center,
-                height: 50.0,
-                width: 345.0,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: ColorConst.borderColor,
-
+              child: InkWell(
+                onTap: (){},
+                child: Container(
+                  alignment: Alignment.center,
+                  height: 50.0,
+                  width: 345.0,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: ColorConst.borderColor,
+              
+                    ),
+                    color: ColorConst.secondaryColor,
+                    borderRadius: BorderRadius.circular(RadiusConst.Small),
                   ),
-                  color: ColorConst.secondaryColor,
-                  borderRadius: BorderRadius.circular(RadiusConst.Small),
+                  child:Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin:const EdgeInsets.all(10.0),
+                        child: Icon(Icons.question_answer,color:ColorConst.textColor,size: FontConst.Medium,),),
+                      Text('Связаться с Банком',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
+                  )
                 ),
-                child:Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      margin:const EdgeInsets.all(10.0),
-                      child: Icon(Icons.question_answer,color:ColorConst.textColor,size: FontConst.Medium,),),
-                    Text('Связаться с Банком',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
-                )
               ),
             ),
             Positioned(
               bottom: 50.0,
               left: 16.0,
               right: 14.0,
-              child: Container(
-                height: 50.0,
-                width: 345.0,
-                 child:Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      margin:const EdgeInsets.all(10.0),
-                      child: Icon(Icons.,color:ColorConst.textColor,size: FontConst.Medium,),),
-                    Text('Язык интерфейса',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(RadiusConst.Small),
-                  border: Border.all(color: ColorConst.borderColor),
+              child: InkWell(
+                onTap: (){},
+                child: Container(
+                  height: 50.0,
+                  width: 345.0,
+                   child:Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin:const EdgeInsets.symmetric(horizontal: 15.0),
+                        child: Icon(SimpleIcons.globus,size: 33.0,),),
+                      Text('Язык интерфейса',style: TextStyle(color: ColorConst.textColor,fontSize: FontConst.Medium),)],
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(RadiusConst.Small),
+                    border: Border.all(color: ColorConst.borderColor),
+                  ),
                 ),
               ),
             ),
