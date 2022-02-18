@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login_page/core/constants/const.dart';
 import 'package:simple_icons/simple_icons.dart';
 
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -10,6 +11,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  @override
+  void initState() {
+    super.initState();
+  }
+  
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
